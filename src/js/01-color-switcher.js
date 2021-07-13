@@ -1,4 +1,4 @@
-import '../css/common.css';
+//import '../css/common.css';
 
 const refs = {
     btnStart: document.querySelector('[data-start]'),
