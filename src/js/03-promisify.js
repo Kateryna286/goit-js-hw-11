@@ -1,6 +1,8 @@
 // ======================= Subtask 1 =======================
 const delay = ms => {
   // Change this function
+    return new Promise(resolve => 
+        setTimeout(logger, ms, ms));
 };
 
 const logger = time => console.log(`Fulfilled after ${time}ms`);
