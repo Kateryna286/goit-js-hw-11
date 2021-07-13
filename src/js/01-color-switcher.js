@@ -13,7 +13,8 @@ let timerId = null;
 refs.btnStart.addEventListener('click', onStartClick);
 refs.btnStop.addEventListener('click', onStopClick);
 
-function onStartClick () {
+function onStartClick() {
+  refs.btnStart.setAttribute('disabled', true);
   timerId = setInterval(() => {
     toChangeBgColor();
   }, 1000);
@@ -26,7 +27,6 @@ function onStopClick () {
 
 function toChangeBgColor() {
     refs.body.style.backgroundColor = getRandomHexColor();
-    refs.btnStart.setAttribute('disabled', true);
 };
 
 
